@@ -1,5 +1,19 @@
 # Third-party notices
 
+## Horizon piston backport
+
+The moving-piston replacement fix and its regression tests in
+`crates/horizon-world/src/level/{hooks,update,tests}.rs` are backported from
+[Horizon PR #7889](https://github.com/horizon-rust/horizon/pull/7889), merge
+[`e1fb3e15ff83fbb52f11f9343acc400535023e35`](https://github.com/horizon-rust/horizon/commit/e1fb3e15ff83fbb52f11f9343acc400535023e35).
+Original commit `7a79e25da4662c7bb2126776c321ca0c67dbba88` is by GRKTheGreat
+(`grkthegreat2018-bot`), with co-author Devin
+(`158243242+devin-ai-integration[bot]@users.noreply.github.com`).
+Copyright (c) 2026 Ludovic Marie and the Horizon contributors, MIT; the
+copyright and full license text are retained in this repository's `LICENSE`.
+The production change and upstream tests retain upstream semantics; additional
+local simulation tests cover direct lever activation and repeated piston cycles.
+
 ## wgpu-hal
 
 `third_party/wgpu-hal` is [wgpu-hal](https://github.com/gfx-rs/wgpu) 30.0.1 by the gfx-rs
